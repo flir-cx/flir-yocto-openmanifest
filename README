@@ -1,0 +1,31 @@
+README - flir-yocto-openmanifest
+================================
+flir-yocto-openmanifest is used to build up a flir yocto environment (Q3\-18 generation, targets "Sherlock", FLIR imx7)  
+It populates a yocto source tree from various external and FLIR git repos
+using "repo tool"  
+(install from: https://source.android.com/setup/build/downloading#installing-repo)
+
+To init a new flir-yocto tree, perform as described here:
+1.  mkdir \<your selection\>
+2.  cd \<your selection\>
+3.  repo init -u ssh://git@bitbucketcommercial.flir.com:7999/im7/flir-yocto-openmanifest.git  
+    (default.xml as default manifest, master as default branch. 
+     use **-b** and/or **-m** flags if change to this is required 
+     (own manifest, own layout)
+4.  repo sync
+5.  create build folder  
+    * MACHINE=ec201 source ./flir-setup-release.sh -b build_ec201
+6.  bitbake \<your recipes..\>
+
+## About flir-exported
+
+Default branch of this manifest adds *meta-flir-base*
+
+For FLIR internal build, there exists also a *meta-flir-internal* repo that
+contains som non-public code. This layer in NOT published
+(Use of meta-flir-internal layer will create a slightly different conf/bblayers.conf 
+
+## Yocto code development
+See confluence page https://confluencecommercial.flir.com/display/INST/FLIR+yocto+v2+-+basic+information
+
+/Ulf Palmér 2020-08-14
