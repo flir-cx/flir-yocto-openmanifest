@@ -4,7 +4,8 @@
   <remote fetch="git://github.com/OSSystems" name="OSSystems"/>
   <remote fetch="git://github.com/meta-qt5" name="QT5"/>
   <remote fetch="git://github.com/Freescale" name="community"/>
-  <remote fetch="ssh://git@bitbucketcommercial.flir.com:7999/im7" name="flir"/>
+  <remote fetch="https://github.com/flir-cx/" name="flir"/>
+  <remote fetch="ssh://git@bitbucketcommercial.flir.com:7999/im7" name="flirinternal"/>
   <remote fetch="git://github.com/openembedded" name="oe"/>
   <remote fetch="git://git.yoctoproject.org" name="yocto"/>
   
@@ -15,9 +16,9 @@
     <linkfile dest="setup-environment" src="setup-environment"/>
   </project>
   <project name="meta-browser" path="sources/meta-browser" remote="OSSystems" revision="75640e14e325479c076b6272b646be7a239c18aa"/>
-  <project name="meta-flir-base" path="sources/meta-flir-base" remote="flir" revision="cb1b2f89569aa22287bff088ab58e19e7bf7c73b" upstream="yocto2.5">
-    <linkfile src="tools/README" dest="README.flirexported"/>
-    <linkfile src="tools/flir-setup-release.sh" dest="flir-setup-release.sh"/>
+  <project name="meta-flir-base" path="sources/meta-flir-base" remote="flir" revision="4eb34c8c122af527bf738d713a6be9e405e98967" upstream="yocto2.5">
+    <linkfile dest="README.flirexported" src="tools/README"/>
+    <linkfile dest="flir-setup-release.sh" src="tools/flir-setup-release.sh"/>
     <linkfile dest="setup-environment" src="tools/setup-environment"/>
   </project>
   <project name="meta-freescale" path="sources/meta-freescale" remote="yocto" revision="86772601e7f6ea188dfaf64097edafc05e15aef3"/>
