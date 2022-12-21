@@ -32,7 +32,7 @@ To get code corresponding to ec201_v1.40, use commands:<br>
 
 
 For the real published FLIR builds, there also exists a *meta-flir-internal* layer that contains some non-public code that is added to rootfs.<br>
-This *meta-flir-internal* layer in NOT published as open source.<br>
+This *meta-flir-internal* layer is NOT published as open source.<br>
 Addition of the meta-flir-internal layer would add a few recipes and would create a slightly different conf/bblayers.conf<br> 
 Adding meta-flir-internal will not change published result from any of the public recipes provided in *meta-flir-base*<br>
 But the content of binary images built from this open flir-yocto-openmanifest will contain fewer artifacts 
