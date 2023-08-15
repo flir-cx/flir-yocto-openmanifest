@@ -22,7 +22,7 @@
     <linkfile src="setup-environment" dest="setup-environment"/>
   </project>
   <project name="meta-boundary" path="sources/meta-boundary" remote="boundary" revision="bca54ff0313adeb2d50722e2f9c17fdb6ebc5d10"/>
-  <project name="meta-flir-base" path="sources/meta-flir-base" remote="flirinternal" revision="04b15ce9847e34ab8917742a561602199e49ef26">
+  <project name="meta-flir-base" path="sources/meta-flir-base" remote="flir" revision="04b15ce9847e34ab8917742a561602199e49ef26">
     <linkfile src="tools/flir-setup-release.sh" dest="flir-setup-release"/>
     <linkfile src="tools/README" dest="README.flirexported"/>
   </project>
