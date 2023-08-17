@@ -61,10 +61,11 @@ Addition of the meta-flir-internal layer would add a few recipes and would creat
 Adding meta-flir-internal will not change published result from any of the public recipes provided in *meta-flir-base*<br>
 But the content of binary images built from this open flir-yocto-openmanifest will contain fewer artifacts 
 
-## About (flir-yocto-openmanifest) branches (2023-08-16)
+## About (flir-yocto-openmanifest) branches (2023-08-17)
 
 * **master** branch is for yocto2.5; supports ec201
 * **yocto3.3** branch is for yocto3.3; supports ec302 (ec201, eoco, evco)
+* **match_eoco_v1.10** branch is for yocto3.3 eoco release *eoco_v1.10* only
 
 Other branches might also exist for specific purposes, probably described in branch files and/or commit messages
 
