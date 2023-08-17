@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote name="OSSystems" fetch="https://github.com/OSSystems"/>
+  <remote name="QT5" fetch="https://github.com/meta-qt5"/>
+  <remote name="Timesys" fetch="https://github.com/TimesysGit"/>
+  <remote name="boundary" fetch="https://github.com/boundarydevices"/>
+  <remote name="clang" fetch="https://github.com/kraj"/>
+  <remote name="community" fetch="https://github.com/Freescale"/>
+  <remote name="flir" fetch="https://github.com/flir-cx/"/>
+  <remote name="flirinternal" fetch="ssh://git@bitbucketcommercial.flir.com:7999/im7"/>
+  <remote name="imx-support" fetch="https://github.com/nxp-imx-support"/>
+  <remote name="nxp-imx" fetch="https://github.com/nxp-imx"/>
+  <remote name="oe" fetch="https://github.com/openembedded"/>
+  <remote name="python2" fetch="https://git.openembedded.org"/>
+  <remote name="rust" fetch="https://github.com/meta-rust"/>
+  <remote name="yocto" fetch="https://git.yoctoproject.org/git"/>
+  
+  <default sync-j="2"/>
+  
+  <project name="fsl-community-bsp-base" path="sources/base" remote="community" revision="5a551f453260bd19895e4d847877874eaa51fde3">
+    <linkfile src="README" dest="README.base"/>
+    <linkfile src="setup-environment" dest="setup-environment"/>
+  </project>
+  <project name="meta-boundary" path="sources/meta-boundary" remote="boundary" revision="bca54ff0313adeb2d50722e2f9c17fdb6ebc5d10"/>
+  <project name="meta-flir-base" path="sources/meta-flir-base" remote="flir" revision="6a3fe9db1406e068620d7a825ecf5014a604490b">
+    <linkfile src="tools/flir-setup-release.sh" dest="flir-setup-release"/>
+    <linkfile src="tools/README" dest="README.flirexported"/>
+  </project>
+  <project name="meta-freescale" path="sources/meta-freescale" remote="community" revision="469d6c958c76ea235b3d3c1527e797ce3a7392e3"/>
+  <project name="meta-freescale-3rdparty" path="sources/meta-freescale-3rdparty" remote="community" revision="f8150f3b37cb83cba1f9e2378e57bb63e02d4610"/>
+  <project name="meta-freescale-distro" path="sources/meta-freescale-distro" remote="community" revision="e6daa26ba1f748326546063d63a085ae671827d9"/>
+  <project name="meta-imx" path="sources/meta-imx" remote="nxp-imx" revision="d176aee3567cdccb5a7fb7c7e70a7cb3bee51bc0">
+    <linkfile src="tools/imx-setup-release.sh" dest="imx-setup-release.sh"/>
+    <linkfile src="README" dest="README-IMXBSP"/>
+  </project>
+  <project name="meta-openembedded" path="sources/meta-openembedded" remote="oe" revision="f44e1a2b575826e88b8cb2725e54a7c5d29cf94a"/>
+  <project name="meta-python2" path="sources/meta-python2" remote="python2" revision="8db9e4f6ceae33d7a4f55453d31e69f9858af4eb"/>
+  <project name="meta-qt5" path="sources/meta-qt5" remote="QT5" revision="43f8f539d40070a70fe89136db89bf5bb1dfe7ed"/>
+  <project name="meta-timesys" path="sources/meta-timesys" remote="Timesys" revision="93bf122d77e77aac1a917865538df84f148a8fcc"/>
+  <project name="poky" path="sources/poky" remote="yocto" revision="269265c00091fa65f93de6cad32bf24f1e7f72a3"/>
+</manifest>
