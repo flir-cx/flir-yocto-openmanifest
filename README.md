@@ -1,7 +1,9 @@
 README - flir-yocto-openmanifest
 ================================
 flir-yocto-openmanifest is used to build up a flir yocto environment (yocto 2.5 generation - "sumo")<br>
-Supported target is "Sherlock" (internal name for FLIR C5 product)  
+Supported target is "Sherlock" (internal name for FLIR C5 product)<br>
+(NOTE: other branches exists to support more products than "Sherlock". Check for yocto3.3 branch in this repo, possibly others)
+
 The manifests in this repo will populate a yocto source tree from various external and FLIR git repos
 using "repo tool"  
 (install from: https://source.android.com/setup/build/downloading#installing-repo)
