@@ -16,7 +16,7 @@
     <linkfile src="setup-environment" dest="setup-environment"/>
   </project>
   <project name="meta-browser" path="sources/meta-browser" remote="OSSystems" revision="75640e14e325479c076b6272b646be7a239c18aa"/>
-  <project name="meta-flir-base" path="sources/meta-flir-base" remote="flir" revision="38c295cae99b057df9bee7c34b684b335087bd60">
+  <project name="meta-flir-base" path="sources/meta-flir-base" remote="flir" revision="3ead07ccefc4e7192a53b138c4346e6813e23e0e">
     <linkfile src="tools/README" dest="README.flirexported"/>
     <linkfile src="tools/flir-setup-release.sh" dest="flir-setup-release.sh"/>
     <linkfile src="tools/setup-environment" dest="setup-environment"/>
