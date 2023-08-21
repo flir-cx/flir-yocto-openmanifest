@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <remote fetch="https://github.com/nxp-imx" name="nxp-imx"/>
-  <remote fetch="https://github.com/OSSystems" name="OSSystems"/>
-  <remote fetch="https://github.com/meta-qt5" name="QT5"/>
-  <remote fetch="https://github.com/Freescale" name="community"/>
-  <remote fetch="https://github.com/flir-cx/" name="flir"/>
-  <remote fetch="ssh://git@bitbucketcommercial.flir.com:7999/im7" name="flirinternal"/>
-  <remote fetch="https://github.com/openembedded" name="oe"/>
-  <remote fetch="https://git.yoctoproject.org" name="yocto"/>
+  <remote name="OSSystems" fetch="https://github.com/OSSystems"/>
+  <remote name="QT5" fetch="https://github.com/meta-qt5"/>
+  <remote name="community" fetch="https://github.com/Freescale"/>
+  <remote name="flir" fetch="https://github.com/flir-cx/"/>
+  <remote name="flirinternal" fetch="ssh://git@bitbucketcommercial.flir.com:7999/im7"/>
+  <remote name="nxp-imx" fetch="https://github.com/nxp-imx"/>
+  <remote name="oe" fetch="https://github.com/openembedded"/>
+  <remote name="yocto" fetch="https://git.yoctoproject.org"/>
   
   <default sync-j="2"/>
   
   <project name="fsl-community-bsp-base" path="sources/base" remote="community" revision="70535e13dd2aabbad53243518f4cc5064d284592">
-    <linkfile dest="README" src="README"/>
-    <linkfile dest="setup-environment" src="setup-environment"/>
+    <linkfile src="README" dest="README"/>
+    <linkfile src="setup-environment" dest="setup-environment"/>
   </project>
   <project name="meta-browser" path="sources/meta-browser" remote="OSSystems" revision="75640e14e325479c076b6272b646be7a239c18aa"/>
-  <project name="meta-flir-base" path="sources/meta-flir-base" remote="flir" revision="6c05b469a81498982339289fe410d8562bbd78c3" upstream="yocto2.5">
-    <linkfile dest="README.flirexported" src="tools/README"/>
-    <linkfile dest="flir-setup-release.sh" src="tools/flir-setup-release.sh"/>
-    <linkfile dest="setup-environment" src="tools/setup-environment"/>
+  <project name="meta-flir-base" path="sources/meta-flir-base" remote="flir" revision="6c05b469a81498982339289fe410d8562bbd78c3">
+    <linkfile src="tools/README" dest="README.flirexported"/>
+    <linkfile src="tools/flir-setup-release.sh" dest="flir-setup-release.sh"/>
+    <linkfile src="tools/setup-environment" dest="setup-environment"/>
   </project>
   <project name="meta-freescale" path="sources/meta-freescale" remote="yocto" revision="fe0744e483ac23c624c6372f40d0e9b099a639d1"/>
   <project name="meta-freescale-3rdparty" path="sources/meta-freescale-3rdparty" remote="community" revision="82037216280a39957fb4272581637abec734ad50"/>
