@@ -10,7 +10,7 @@ There are a number of supported targets listed below
 - *eoco* -  board name for FLIR G-Series products
 - *evco* -  board name for FLIR Exx-Series and FLIR T-Series
 
-(note that only *ec302* has been verified with flir-yocto-openmanifest, yocto3.3 as of now)<br>
+(note that only *ec302* and *eoco* has been verified with flir-yocto-openmanifest, yocto3.3 as of now)<br>
 
 The manifests in this repo will populate a yocto source tree from various external git repos
 using "repo tool"  
@@ -61,7 +61,7 @@ Addition of the meta-flir-internal layer would add a few recipes and would creat
 Adding meta-flir-internal will not change published result from any of the public recipes provided in *meta-flir-base*<br>
 But the content of binary images built from this open flir-yocto-openmanifest will contain fewer artifacts 
 
-## About (flir-yocto-openmanifest) branches (2023-08-17)
+## About (flir-yocto-openmanifest) branches (2024-09-06)
 
 * **master** branch is for yocto2.5; supports ec201
 * **yocto3.3** branch is for yocto3.3; supports ec302 (ec201, eoco, evco)
